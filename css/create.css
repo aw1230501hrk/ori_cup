@@ -1,0 +1,83 @@
+@charset 'utf-8';
+
+/* 全体設定 */
+body {
+    height: 100vh; /* ビューポートの高さに合わせる */
+    width: 100vw;
+    margin: 0; /* マージンをリセット */
+    display: flex;
+    flex-direction: column; /* 縦方向レイアウト */
+    background: linear-gradient(to bottom, #fff 20%, #d4d4d4); /* 背景グラデーション */
+    background-attachment: fixed; /* 背景固定 */
+    overflow: hidden; /* 全体のスクロールを無効化 */
+}
+
+/* 上部エリア (55%) */
+#picture_cont {
+    flex: 0 0 55%; /* 高さを55%に固定 */
+}
+
+/* 下部エリア (45%) */
+#choice_cont {
+    flex: 1; /* 残りのスペースを埋める */
+    overflow-y: auto; /* コンテンツが多い場合は縦スクロールを許可 */
+    box-sizing: border-box; /* サイズにパディングを含む */
+}
+
+/* ナビゲーション設定 */
+#create_nav {
+    display: flex;
+    width: 100%;
+    z-index: 0;
+    padding: 0 4px;
+    box-sizing: border-box;
+}
+
+#create_nav img {
+    width: 100%; /* 親要素に合わせた幅 */
+    height: auto; /* 高さは画像比率に基づく */
+    object-fit: contain; /* 比率を維持して表示 */
+    object-position: bottom; /* 画像を下寄せ */
+    transition: transform 0.3s ease, top 0.3s ease, opacity 0.3s ease; /* アニメーション効果 */
+    display: block; /* 画像の余白を防止 */
+}
+
+/* コンテンツ表示設定 */
+.content {
+    min-height: 45vh; /* 最低でも45%の高さを確保 */
+    display: none; /* デフォルトで非表示 */
+    background-color: #fff; /* 背景白 */
+    padding: 20px; /* コンテンツの余白 */
+    box-sizing: border-box;
+}
+
+.content.active {
+    display: block; /* アクティブ状態のとき表示 */
+}
+
+#picture_cont{
+    text-align: center;
+}
+
+/*----- コップ選択 -----*/
+.cup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cup img{
+    width: 150px;
+    height: 150px;
+    border: 2px solid #c8bebf;
+    border-radius: 10px;
+    margin: 0 15px;
+    padding: 5px;
+}
+
+/*----- 色選択 -----*/
+
+
+/*----- 文字選択 -----*/
+
+
+/*----- 写真選択 -----*/

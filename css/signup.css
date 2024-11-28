@@ -1,0 +1,141 @@
+@charset 'utf-8';
+
+/*背景*/
+body{
+    background-image: url(../img/signpu.jpg);
+    position: relative; /* 相対位置を指定 */
+    background-size: 100%;
+}
+
+.signup_bg{
+    background: #fff;
+    border: 3px solid #7e99d4;
+    border-radius: 20px;
+    padding: 3% 6%;
+    box-shadow: 0 0 0 7px #fff; /* 白い縁取り */
+}
+
+.container{
+    padding: 4% 4.5%;
+    box-sizing: border-box;
+}
+
+
+/*ロゴ*/
+#title{
+    text-align: center;
+}
+
+.signup_log{
+    margin: 20px 0;
+    text-align: center;
+}
+
+.signup_log img{
+    height: 70px;
+}
+
+
+/*テーブル*/
+.contact_table{
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* 下に表示 */
+caption {
+    caption-side: bottom;
+}
+
+/* 送信ボタン */
+.contact_button {
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 600;
+    font-size: 23px;
+    line-height: 1;
+    letter-spacing: 2px; /* スキーニング（文字間の調整） */
+    
+    color: #fff;
+    background-color: #7e99d4;
+    border: 3px solid #fff;
+    border-radius: 50px;
+    width: 280px;
+    box-shadow: 2px 6px #7e99d4;
+    padding: 22px 0;
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* アニメーションのスムーズさを追加 */
+    position: relative; /* 疑似要素を位置させるために相対位置に設定 */
+}
+
+.button{
+    width: 300px;
+    margin: auto auto;
+}
+
+/* 各入力要素のスタイル */
+/*.name, .mail, .phone, .kinds, .number_cont, .kinds_text {
+    margin-bottom: 10px;
+}
+*/
+td{
+    padding-bottom: 20px;
+}
+/*
+label{
+    padding-right: 18px;
+}*/
+
+input {
+    padding: 2px 10px;
+    box-sizing: border-box;
+    width: 100%;
+    background: #d8e0f2;
+    border: none;
+    height: 40px;
+    border-radius: 3px;
+}
+/*電話番号*/
+.number_cont {
+    display: flex;
+    width: 70%;
+    align-items: center;
+}
+.kinds_text td{
+    vertical-align: top;
+}
+textarea {
+    box-sizing: border-box;
+    width: 100%;
+    background: #d8e0f2;
+    border: none;
+    border-radius: 3px;
+}
+
+/*必須*/
+.required{
+    background-color: #7e99d4;
+    color: #fff;
+    border-radius: 2px;
+    font-size: 0.76rem;
+    padding: 3.5px 8px 5px;
+    margin-right: 6px;
+}
+
+/*送信注意文*/
+.check{
+    text-align: center;
+}
+.check a{
+    color: #000;
+    text-underline-offset: 5px;
+}
+/*エラーメッセージ*/
+.error-message{
+    color: red;
+    font-size: 0.8rem;
+    margin-top: -18px;
+}
+
+/*文字*/
+form label{
+    color: #777777;
+}
